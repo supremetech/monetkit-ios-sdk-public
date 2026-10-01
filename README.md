@@ -14,7 +14,7 @@ Subscriptions, entitlements and StoreKit 2 purchases for iOS, with a SwiftUI pay
 In Xcode, **File → Add Package Dependencies…** and paste:
 
 ```
-https://github.com/supremetech/monetkit-ios-sdk-public
+https://github.com/supremetech/monetkit-ios-sdk-public.git
 ```
 
 Add `MonetKit` to your target, and `MonetKitiOS` if you use the paywall.
@@ -23,7 +23,7 @@ Or in `Package.swift`:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/supremetech/monetkit-ios-sdk-public", from: "1.0.0")
+    .package(url: "https://github.com/supremetech/monetkit-ios-sdk-public.git", from: "1.0.0")
 ],
 targets: [
     .target(
