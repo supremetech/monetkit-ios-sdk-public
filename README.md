@@ -17,7 +17,7 @@ In Xcode, **File → Add Package Dependencies…** and paste:
 https://github.com/supremetech/monetkit-ios-sdk-public
 ```
 
-Add `MonetKit` to your target, and `MonetKitUI` if you use the paywall.
+Add `MonetKit` to your target, and `MonetKitiOS` if you use the paywall.
 
 Or in `Package.swift`:
 
@@ -30,7 +30,7 @@ targets: [
         name: "YourApp",
         dependencies: [
             .product(name: "MonetKit",   package: "monetkit-ios-sdk-public"),
-            .product(name: "MonetKitUI", package: "monetkit-ios-sdk-public")  // only for the paywall
+            .product(name: "MonetKitiOS", package: "monetkit-ios-sdk-public")  // only for the paywall
         ]
     )
 ]
