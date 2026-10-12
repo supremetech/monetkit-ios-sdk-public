@@ -22,13 +22,13 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "MonetKit",
-            url: "https://github.com/supremetech/monetkit-ios-sdk-public/releases/download/1.0.0/MonetKit.xcframework.zip",
-            checksum: "d52f6d28056932b53be149ddeed13f089405f7b744b4bfff88acab2ec088de68"
+            url: "https://github.com/supremetech/monetkit-ios-sdk-public/releases/download/1.0.1/MonetKit.xcframework.zip",
+            checksum: "44ecd1a30571dce9985e4942714b731ffe4f3a708be9125ac4283c37d25537e2"
         ),
         .binaryTarget(
             name: "MonetKitiOS",
-            url: "https://github.com/supremetech/monetkit-ios-sdk-public/releases/download/1.0.0/MonetKitiOS.xcframework.zip",
-            checksum: "ece8e35776f59bc9e34b2b91dfe2634b6973119dcdd3d9fd1fdf8fe996374c4c"
+            url: "https://github.com/supremetech/monetkit-ios-sdk-public/releases/download/1.0.1/MonetKitiOS.xcframework.zip",
+            checksum: "45f2f3e7f9c8ace438eff03004a734b05d085f0a533e9236d3932acb7d06dc0e"
         ),
     ]
 )
