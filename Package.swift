@@ -12,23 +12,23 @@ let package = Package(
         .iOS(.v16)
     ],
     products: [
-        .library(name: "MonetKit",   targets: ["MonetKit"]),
+        .library(name: "MonetKit", targets: ["MonetKit"]),
         // A binary target cannot declare dependencies, so the product carries
         // the core alongside the UI module rather than relying on one to pull
         // in the other. Named after its module, so what a consumer adds is
         // what they import.
-        .library(name: "MonetKitiOS", targets: ["MonetKitiOS", "MonetKit"]),
+        .library(name: "MonetKitPaywallUI", targets: ["MonetKitPaywallUI", "MonetKit"]),
     ],
     targets: [
         .binaryTarget(
             name: "MonetKit",
-            url: "https://github.com/supremetech/monetkit-ios-sdk-public/releases/download/1.0.1/MonetKit.xcframework.zip",
-            checksum: "44ecd1a30571dce9985e4942714b731ffe4f3a708be9125ac4283c37d25537e2"
+            url: "https://github.com/supremetech/monetkit-ios-sdk-public/releases/download/1.1.0/MonetKit.xcframework.zip",
+            checksum: "fa11da38d2cabc91d30d47aa51f730b9a1f50a751f1226505257652d76ccfa58"
         ),
         .binaryTarget(
-            name: "MonetKitiOS",
-            url: "https://github.com/supremetech/monetkit-ios-sdk-public/releases/download/1.0.1/MonetKitiOS.xcframework.zip",
-            checksum: "45f2f3e7f9c8ace438eff03004a734b05d085f0a533e9236d3932acb7d06dc0e"
+            name: "MonetKitPaywallUI",
+            url: "https://github.com/supremetech/monetkit-ios-sdk-public/releases/download/1.1.0/MonetKitPaywallUI.xcframework.zip",
+            checksum: "1b634a31de2156f85c003e2efeed6b82fffba70f50e4ded261583927deba06fb"
         ),
     ]
 )
